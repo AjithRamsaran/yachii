@@ -1,0 +1,264 @@
+# Sample data to populate your e-commerce API
+# You can use this data to test your API endpoints
+
+sample_products = [
+    {
+        "name": "Samsung Galaxy S24 Ultra",
+        "description": "Latest flagship smartphone with AI-powered camera and S Pen",
+        "price": 82999.0,
+        "original_price": 89999.0,
+        "category": "Electronics",
+        "subcategory": "Smartphones",
+        "brand": "Samsung",
+        "product_type": "smartphone",
+        "product_info": {
+            "display": "6.8 inches",
+            "storage": "256GB",
+            "ram": "12GB",
+            "camera": "200MP + 50MP + 12MP + 10MP",
+            "battery": "5000mAh",
+            "os": "Android 14"
+        },
+        "platforms": ["amazon", "flipkart", "samsung"],
+        "stock_quantity": 50,
+        "is_available": True,
+        "images": [
+            "https://example.com/galaxy-s24-ultra-1.jpg",
+            "https://example.com/galaxy-s24-ultra-2.jpg"
+        ],
+        "thumbnail": "https://example.com/galaxy-s24-ultra-thumb.jpg",
+        "tags": ["smartphone", "android", "5g", "camera", "premium"],
+        "sku": "SAM-GS24U-256-BLK",
+        "rating": 4.5,
+        "review_count": 1247
+    },
+    {
+        "name": "Nike Air Jordan 1 Retro High",
+        "description": "Classic basketball shoes with premium leather construction",
+        "price": 12995.0,
+        "original_price": 14995.0,
+        "category": "Fashion",
+        "subcategory": "Footwear",
+        "brand": "Nike",
+        "product_type": "shoes",
+        "product_info": {
+            "material": "Leather and synthetic",
+            "sole": "Rubber",
+            "closure": "Lace-up",
+            "heel_height": "2 inches",
+            "sizes_available": ["7", "8", "9", "10", "11", "12"]
+        },
+        "platforms": ["myntra", "ajio", "nike"],
+        "stock_quantity": 25,
+        "is_available": True,
+        "images": [
+            "https://example.com/air-jordan-1-1.jpg",
+            "https://example.com/air-jordan-1-2.jpg"
+        ],
+        "thumbnail": "https://example.com/air-jordan-1-thumb.jpg",
+        "tags": ["basketball", "shoes", "retro", "leather", "nike"],
+        "sku": "NIKE-AJ1-BRD-10",
+        "rating": 4.7,
+        "review_count": 892
+    },
+    {
+        "name": "MacBook Air M3",
+        "description": "Ultra-thin laptop with Apple M3 chip for incredible performance",
+        "price": 114900.0,
+        "original_price": 119900.0,
+        "category": "Electronics",
+        "subcategory": "Laptops",
+        "brand": "Apple",
+        "product_type": "laptop",
+        "product_info": {
+            "processor": "Apple M3 8-core CPU",
+            "memory": "8GB unified memory",
+            "storage": "256GB SSD",
+            "display": "13.6-inch Liquid Retina",
+            "graphics": "8-core GPU",
+            "battery": "Up to 18 hours",
+            "weight": "1.24 kg"
+        },
+        "platforms": ["amazon", "flipkart", "apple"],
+        "stock_quantity": 15,
+        "is_available": True,
+        "images": [
+            "https://example.com/macbook-air-m3-1.jpg",
+            "https://example.com/macbook-air-m3-2.jpg"
+        ],
+        "thumbnail": "https://example.com/macbook-air-m3-thumb.jpg",
+        "tags": ["laptop", "apple", "m3", "ultrabook", "premium"],
+        "sku": "APPL-MBA-M3-256-SLV",
+        "rating": 4.8,
+        "review_count": 634
+    },
+    {
+        "name": "Lakme Absolute Perfect Radiance Foundation",
+        "description": "Full coverage foundation with SPF 20 for flawless skin",
+        "price": 899.0,
+        "original_price": 1200.0,
+        "category": "Beauty",
+        "subcategory": "Makeup",
+        "brand": "Lakme",
+        "product_type": "cosmetics",
+        "product_info": {
+            "coverage": "Full coverage",
+            "finish": "Matte",
+            "spf": "SPF 20",
+            "skin_type": "All skin types",
+            "shades_available": ["Fair", "Medium", "Deep", "Very Deep"],
+            "volume": "25ml"
+        },
+        "platforms": ["nykaa", "amazon", "myntra"],
+        "stock_quantity": 100,
+        "is_available": True,
+        "images": [
+            "https://example.com/lakme-foundation-1.jpg",
+            "https://example.com/lakme-foundation-2.jpg"
+        ],
+        "thumbnail": "https://example.com/lakme-foundation-thumb.jpg",
+        "tags": ["foundation", "makeup", "spf", "full-coverage", "matte"],
+        "sku": "LKM-APR-FDN-FAIR-25",
+        "rating": 4.2,
+        "review_count": 2156
+    },
+    {
+        "name": "Organic India Tulsi Green Tea",
+        "description": "Certified organic green tea with tulsi for wellness and immunity",
+        "price": 285.0,
+        "original_price": 320.0,
+        "category": "Food & Beverages",
+        "subcategory": "Tea & Coffee",
+        "brand": "Organic India",
+        "product_type": "beverage",
+        "product_info": {
+            "type": "Green tea with herbs",
+            "certification": "USDA Organic",
+            "ingredients": ["Green tea", "Tulsi", "Natural flavors"],
+            "caffeine": "Low caffeine",
+            "pack_size": "25 tea bags",
+            "benefits": ["Immunity", "Antioxidants", "Stress relief"]
+        },
+        "platforms": ["bigbasket", "amazon", "grofers"],
+        "stock_quantity": 200,
+        "is_available": True,
+        "images": [
+            "https://example.com/organic-india-tea-1.jpg",
+            "https://example.com/organic-india-tea-2.jpg"
+        ],
+        "thumbnail": "https://example.com/organic-india-tea-thumb.jpg",
+        "tags": ["organic", "green-tea", "tulsi", "immunity", "wellness"],
+        "sku": "ORGI-TGT-25-BAG",
+        "rating": 4.4,
+        "review_count": 758
+    }
+]
+
+# API Usage Examples
+api_usage_examples = """
+# API Usage Examples
+
+## 1. Create Products (POST /api/v1/products/)
+curl -X POST "http://localhost:8000/api/v1/products/" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "name": "iPhone 15 Pro",
+       "description": "Latest iPhone with titanium design",
+       "price": 134900.0,
+       "category": "Electronics",
+       "brand": "Apple",
+       "product_type": "smartphone",
+       "platforms": ["amazon", "flipkart"],
+       "stock_quantity": 30,
+       "sku": "APPL-IP15P-128-NT"
+     }'
+
+## 2. Get All Products (GET /api/v1/products/)
+curl "http://localhost:8000/api/v1/products/"
+
+## 3. Get Products with Filters
+curl "http://localhost:8000/api/v1/products/?category=Electronics&min_price=50000&max_price=150000&limit=10"
+
+## 4. Search Products
+curl "http://localhost:8000/api/v1/products/?search=smartphone&brand=Samsung"
+
+## 5. Get Product by ID (GET /api/v1/products/{id})
+curl "http://localhost:8000/api/v1/products/1"
+
+## 6. Update Product (PUT /api/v1/products/{id})
+curl -X PUT "http://localhost:8000/api/v1/products/1" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "price": 79999.0,
+       "stock_quantity": 45
+     }'
+
+## 7. Update Stock (PATCH /api/v1/products/{id}/stock)
+curl -X PATCH "http://localhost:8000/api/v1/products/1/stock?quantity=20"
+
+## 8. Delete Product (DELETE /api/v1/products/{id})
+curl -X DELETE "http://localhost:8000/api/v1/products/1"
+
+## 9. Get Filter Options
+curl "http://localhost:8000/api/v1/products/filters/categories"
+curl "http://localhost:8000/api/v1/products/filters/brands"
+curl "http://localhost:8000/api/v1/products/filters/types"
+
+## 10. Health Check
+curl "http://localhost:8000/health"
+
+# Mobile App Integration Examples
+
+## React Native / Flutter HTTP requests
+const response = await fetch('http://your-api-url/api/v1/products/', {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+const data = await response.json();
+
+## Pagination for mobile apps
+const page = 1;
+const limit = 20;
+const response = await fetch(`http://your-api-url/api/v1/products/?skip=${(page-1)*limit}&limit=${limit}`);
+
+## Search and filter for mobile
+const searchTerm = 'smartphone';
+const category = 'Electronics';
+const response = await fetch(`http://your-api-url/api/v1/products/?search=${searchTerm}&category=${category}`);
+"""
+
+# Database Setup Commands
+setup_commands = """
+# Setup and Run Commands
+
+## 1. Clone and Setup
+mkdir ecommerce-backend
+cd ecommerce-backend
+# Copy all the files to appropriate locations
+
+## 2. Environment Setup
+cp .env.example .env
+# Edit .env with your configuration
+
+## 3. Build and Run with Docker
+docker-compose up --build
+
+## 4. Run without Docker (Local Development)
+pip install -r requirements.txt
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+## 5. Database Migrations (if using Alembic)
+alembic init alembic
+alembic revision --autogenerate -m "Initial migration"
+alembic upgrade head
+
+## 6. Access the API
+# API Documentation: http://localhost:8000/docs
+# Alternative docs: http://localhost:8000/redoc
+# Health check: http://localhost:8000/health
+
+## 7. Populate Sample Data
+# Use the sample_products data above to create initial products via API
+"""
